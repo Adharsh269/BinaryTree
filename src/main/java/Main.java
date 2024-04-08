@@ -1,14 +1,18 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
-
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+    BinaryTree tree=new BinaryTree();
+    tree.insert("a1");
+    tree.insert("a2");
+    tree.insert("a3");
+    tree.insert("a4");
+    tree.insert("a5");
+    tree.insert("a6");
+    tree.insert("a7");
+    tree.insert("a8");
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+    tree.levelOrder();
+    System.out.println();
+    tree.deleteNode("a1");
+    tree.levelOrder();
+  } 
 }
